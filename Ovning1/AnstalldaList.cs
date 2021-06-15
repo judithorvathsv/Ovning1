@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ovning1
 {
-    class AnstalldaList
+    public class AnstalldaList
     {
      
         
@@ -16,18 +16,15 @@ namespace Ovning1
         public void AddNewWorker(string name, string salary)        {
             Anstallda newWorker = new Anstallda(name, salary);      
                 anstalldas.Add(newWorker);
-                Console.WriteLine("Worker added: {0}", name);        
-
-        }
+                Console.WriteLine("Worker added: {0}", name);
+             }
 
         public void GetAllWorker()
         {
             Console.WriteLine("All worker: ");
-
-
-            foreach (Object Anstallda in anstalldas)      
+            foreach (var auth in anstalldas)      
             {
-                Console.WriteLine(anstalldas);
+                Console.WriteLine(auth);
         
             }
 

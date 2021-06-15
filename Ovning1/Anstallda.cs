@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ovning1
 {
-    class Anstallda
+    public class Anstallda
             {
        private string name;
        private string salary;
@@ -25,7 +25,7 @@ namespace Ovning1
 
         public override string ToString()
         {
-            return "Person: " + GetName() + " " + GetName();
+            return "Person: " + GetName() + " " + GetSalary();
         }
 
 

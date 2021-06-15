@@ -2,9 +2,9 @@
 
 namespace Ovning1
 {
-    class Program
+    public class Program
     {
-       static string name, salary;
+       public string name, salary;
 
        public AnstalldaList list = new AnstalldaList();//-----------------------------------------
 
@@ -12,28 +12,22 @@ namespace Ovning1
         {
 
             Program prog = new Program();
-            prog.GetNewWorker();
-           
+            prog.GetNewWorker();           
             prog.GetWorkerList();
         }
 
         public  void GetNewWorker() {
-            do {            
-
+            do {      
                 Console.WriteLine("Write name for the new worker: ");
                 name = Console.ReadLine();
 
                 Console.WriteLine("Write salary for the new worker: ");
                 salary = Console.ReadLine();
-                list.AddNewWorker(name, salary);
-            
+                list.AddNewWorker(name, salary);            
             } while (name != "");
             
                 } 
         
-
-
-       
 
         public void GetWorkerList() {
             list.GetAllWorker();
