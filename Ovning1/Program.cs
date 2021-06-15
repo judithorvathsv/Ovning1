@@ -5,8 +5,8 @@ namespace Ovning1
     public class Program
     {
        public string name, salary;
-
-       public AnstalldaList list = new AnstalldaList();//-----------------------------------------
+        string answer;
+        public AnstalldaList list = new AnstalldaList();//-----------------------------------------
 
         static void Main(string[] args)
         {
@@ -17,6 +17,7 @@ namespace Ovning1
         }
 
         public  void GetNewWorker() {
+            /*
             do {      
                 Console.WriteLine("Write name for the new worker: ");
                 name = Console.ReadLine();
@@ -25,7 +26,33 @@ namespace Ovning1
                 salary = Console.ReadLine();
                 list.AddNewWorker(name, salary);            
             } while (name != "");
-            
+            */
+
+
+            do { 
+
+            Console.WriteLine("Write name for the new worker: ");
+            name = Console.ReadLine();
+
+                if (name != "")
+                {
+                    Console.WriteLine("Write salary for the new worker: ");
+                    salary = Console.ReadLine();
+                    list.AddNewWorker(name, salary);
+                }
+                else Console.WriteLine("you dont register anything");
+              
+                } while (name != "") ;
+
+
+
+
+
+
+
+
+
+
                 } 
         
 
