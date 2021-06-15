@@ -22,6 +22,13 @@ namespace Ovning1
         {
             return salary;
         }
+
+        public override string ToString()
+        {
+            return "Person: " + GetName() + " " + GetName();
+        }
+
+
         public void SkrivUtAnstallda() {
             Console.WriteLine("Namn för anställda är {0}, lön: {1}", GetName(), GetSalary());
         }

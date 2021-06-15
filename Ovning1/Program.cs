@@ -18,7 +18,7 @@ namespace Ovning1
         }
 
         public  void GetNewWorker() {
-            do {             
+            do {            
 
                 Console.WriteLine("Write name for the new worker: ");
                 name = Console.ReadLine();
@@ -26,6 +26,7 @@ namespace Ovning1
                 Console.WriteLine("Write salary for the new worker: ");
                 salary = Console.ReadLine();
                 list.AddNewWorker(name, salary);
+            
             } while (name != "");
             
                 } 

@@ -23,9 +23,12 @@ namespace Ovning1
         public void GetAllWorker()
         {
             Console.WriteLine("All worker: ");
-            foreach (Anstallda elem in anstalldas)
-            {               
-                Console.WriteLine(elem);
+
+
+            foreach (Object Anstallda in anstalldas)      
+            {
+                Console.WriteLine(anstalldas);
+        
             }
 
         }
